@@ -92,7 +92,7 @@ class TestBFS(unittest.TestCase):
         
         self.assertEqual(bfs(self.tree, 3), {"key": 3, "children": []})
         self.assertEqual(bfs(self.tree, 4), {"key": 4, "children": [{"key": 7, "children": [ {"key": 11, "children": []}, {"key": 12, "children": []}]}, {"key": 8, "children": []}]})
-        self.assertEqual(bfs(self.tree, 4), {"key": 4, "children": [{"key": 7, "children": [ {"key": 11, "children": []}, {"key": 12, "children": []}]}, {"key": 8, "children": []}]})
+        self.assertEqual(bfs(self.tree, 7), { "key": 7, "children": [ { "key": 11, "children": [] }, { "key": 12, "children": [] } ] })
         self.assertEqual(bfs(self.tree, 9), {"key": 9, "children": []})
 
 
